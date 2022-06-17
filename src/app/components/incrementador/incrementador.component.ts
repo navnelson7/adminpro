@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
+
 
 @Component({
   selector: 'app-incrementador',
@@ -6,11 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class IncrementadorComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+export class IncrementadorComponent {
+  progreso: number = 0;
+  
+  get getPorcentaje(){
+    return `${this.progreso}%`;
   }
+  cambiarValor(valor: number){
+    if(this.progreso == 100 && valor >=0){
+      this.progreso = 100;
+      return;
+    }
 
+    if(this.progreso <= 0 && valor <0 ){
+      this.progreso = 0;
+      return
+    }
+    this.progreso = this.progreso + valor;
+  }
 }

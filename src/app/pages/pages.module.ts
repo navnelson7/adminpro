@@ -8,6 +8,7 @@ import { PagesComponent } from '../pages/pages.component';
 import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { HeaderComponent } from '../shared/header/header.component';
+import { ComponentsModule } from '../components/components.module';
 
 
 
@@ -26,6 +27,12 @@ import { HeaderComponent } from '../shared/header/header.component';
     Grafica1Component,
     PagesComponent,
   ],
-  imports: [CommonModule, SharedModule, AppRoutingModule, FormsModule]
+  imports: [
+    CommonModule, 
+    SharedModule, 
+    AppRoutingModule, 
+    FormsModule, 
+    ComponentsModule
+  ]
 })
 export class PagesModule { }
