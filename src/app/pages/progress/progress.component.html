@@ -5,9 +5,8 @@
                 <h4 class="card-title">Striped Progress bar </h4>
                 <div class="progress m-t-20">
                     <div class="progress-bar bg-primary progress-bar-striped active" 
-                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" 
                             style="height:5px;" 
-                            
+                            [style.width]="getProgreso1"
                             role="progressbar">
                     </div>
                 </div>
@@ -23,9 +22,8 @@
                 <h4 class="card-title">Striped Progress bar </h4>
                 <div class="progress m-t-20">
                     <div class="progress-bar bg-primary progress-bar-striped active" 
-                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" 
                             style="height:5px;" 
-                            
+                            [style.width]="getProgreso2"
                             role="progressbar">
                     </div>
                 </div>
@@ -38,14 +36,14 @@
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-                <app-incrementador></app-incrementador>
+                <app-incrementador [valor]="15"></app-incrementador>
             </div>
         </div>
     </div>
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-                <app-incrementador></app-incrementador>
+                <app-incrementador [valor]="45"></app-incrementador>
             </div>
         </div>
     </div>
