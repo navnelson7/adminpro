@@ -10,10 +10,10 @@ export class ProgressComponent {
   progreso2 : number = 30;
 
   getProgreso1() {
-    return `${this.progreso1}%`;
+    return `${ this.progreso1 }%`;
   }
 
   getProgreso2() {
-    return `${this.progreso2}%`;
+    return `${ this.progreso2 }%`;
   }
 }
