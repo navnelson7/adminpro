@@ -16,4 +16,6 @@ export class ProgressComponent {
   getProgreso2() {
     return `${ this.progreso2 }%`;
   }
+
+  
 }
