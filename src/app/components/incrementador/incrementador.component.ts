@@ -11,7 +11,7 @@ import { Component, Input, Output, EventEmitter} from '@angular/core';
 export class IncrementadorComponent {
   @Input('valor') progreso: number = 0;
 
-  @Output() valorSalida: EventEmitter<number> = new EventEmitter();
+  @Output('valor') valorSalida: EventEmitter<number> = new EventEmitter();
   
   // get getPorcentaje(){ 
   //   return `${this.progreso}%`;
